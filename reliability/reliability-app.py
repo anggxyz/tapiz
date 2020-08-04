@@ -25,16 +25,15 @@ def analyse (txt):
   pred_prob = model.predict(padded)
   pred_class = model.predict_classes(padded)
   prob = [prob*100 for prob in pred_prob]
-
   st.write(pd.DataFrame({
        'class 0 (Reliable) %': [prob[0][0]],
        'class 1 (Unreliable) %': [prob[0][1]],
    }))
-
   if (pred_class[0] == 0):
     st.write('Predicted class:', pred_class[0], '/ Reliable')
   elif (pred_class[0] == 1):
     st.write('Predicted class:', pred_class[0], '/ Unreliable')
+  return
 
 txt = st.text_area (
   label='Text to analyze', 
