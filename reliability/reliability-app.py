@@ -37,8 +37,11 @@ def analyse (txt):
 
 txt = st.text_area (
   label='Text to analyze', 
-  value="Enter content here ...",
-  height=24
+  value="""For the BCCI the IPL is a golden goose, and if anyone thought that the event would be abandoned this year, think about 2009 when the BCCI took the IPL to South Africa as it clashed with the general elections in India. From a business point of view it makes perfect sense — explore new markets and expand one’s reach. The question is: Is cricket (and the IPL) purely of business interest for the BCCI? Even if the answer to that is in the affirmative, can the people of India see cricket the way the BCCI does? If only they could!
+
+While the venue is not yet finalised, in all likelihood the sporting/entertainment extravaganza will be held in the United Arab Emirates. Reports suggest that taking the league away from India to the UAE or associating with a Chinese brand will not dent the IPL brand. Tell that to the Surat resident who threw his China-made TV from the second floor of his apartment building, in protest of PLA action at Galwan Valley. Tell that to the numerous retail stores, offices, and even factories across India that were targeted for assembling or selling Chinese products.
+  """,
+  height=324
 )
 
 if st.button('Check'):
